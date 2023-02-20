@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -222,4 +223,55 @@ body {
 .content a:hover {
     letter-spacing: 0.2em;
     margin-top: -15px;
+}
+
+.tech-stack-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tech-stack-section h2{
+    color: rgba(204, 204, 204, 1);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    line-height: 26px;
+    letter-spacing: 1.1px;
+}
+
+.tech-stack-section p{
+    color: rgba(204, 204, 204, 1);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+
+.technologies {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 100px;
+}
+
+.technologies div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.technologies p {
+    color: white;
+    letter-spacing: 1px;
+}
+
+.technologies img {
+    width: 70px;
+    height: 70px;
 }
