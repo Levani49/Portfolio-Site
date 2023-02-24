@@ -370,3 +370,104 @@ body {
 .project-cards div .github-address .github-code a {
     color: white;
 }
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.right-section {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 70px;
+}
+
+.right-section h3 {
+    color: rgba(167, 167, 167, 1)
+}
+
+.phone-number {
+    margin-right: 30px;
+    letter-spacing: 2px;
+}
+
+.bottom-logo {
+    margin-left: 90px;
+}
+
+.bottom-icons {
+    display: flex;
+    margin-top: 15px;
+}
+
+.line {
+    height: 1px;
+    background: rgba(66, 68, 110, 1);
+    border: 2px solid rgba(66, 68, 110, 1);
+    margin-top: 50px;
+    width: 1100px;
+    margin-left: 90px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.bottom-navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 85px;
+}
+
+.bottom-navbar-links li {
+    list-style: none;
+}
+
+.bottom-navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: #A7A7A7;
+    padding: 1em;
+    position: relative;
+    padding: 0 10px;
+}
+
+.bottom-navbar-links li a::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(231, 15, 170, 1);
+    height: 3px;
+    width: 0 ;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.bottom-navbar-links li a:hover::after {
+    width: 100%;
+}
+
+.bottom-navbar-links li a:hover {
+    color: rgba(0, 192, 253, 1);
+}
+
+.made-by {
+    margin-right: 50px;
+    margin-top: -25px;
+}
+
+.made-by h4{
+    color: white;
+    letter-spacing: 2px;
+}
+
+.made-by h4 span {
+    background: linear-gradient(rgba(0, 192, 253, 1), rgba(231, 15, 170, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
