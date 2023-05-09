@@ -1,0 +1,117 @@
+.introduction-section h1 {
+    font-size: 2.2em;
+    letter-spacing: 1.5px;
+    color: white;
+}
+
+.introduction-section h1 span {
+    background: linear-gradient(rgba(0, 192, 253, 1), rgba(231, 15, 170, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.my-picture{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgb(1, 59, 77);
+    overflow: hidden;   
+}
+  
+.my-picture::before {
+    content: "";
+    position: absolute;
+    inset: -10px 140px;
+    background: linear-gradient(rgba(0, 192, 253, 1), rgba(231, 15, 170, 1));
+    transition: 0.5s;
+    animation: aniamte 4s linear infinite;
+}
+
+.my-picture:hover::before {
+    inset: -20px 0px;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.my-picture::after {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    background: #191919;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.content {
+    position: absolute;
+    inset: 10px;
+    border: 2px solid rgba(231, 15, 170, 1);
+    z-index: 3;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.my-picture:hover .content img {
+    opacity: 0;
+}
+
+.content h2 {
+    position: relative;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+}
+
+.content h2 span {
+    font-weight: 300;
+    font-size: 0.75em;
+}
+
+.content a {
+    position: relative;
+    padding: 10px 20px;
+    background: #fff;
+    color: #070a2c;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 1.25em;
+    text-transform: capitalize;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.content a:hover {
+    letter-spacing: 0.2em;
+    margin-top: -15px;
+}

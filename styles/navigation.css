@@ -1,0 +1,90 @@
+.navigation {
+    margin: 0 auto;
+    width: 1193px;
+    height: 59px;
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    width: 97px;
+    cursor: pointer;
+}
+
+.zeroseven {
+    display: flex;
+}
+
+.zeroseven h1 {
+    font-size: 2.5em;
+    margin-top: -10px;
+    letter-spacing: 3px;
+    background: linear-gradient(rgba(0, 192, 253, 1), rgba(231, 15, 170, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.levanidev {
+    display: flex;
+    margin-top: -50px;
+}
+
+.levanidev p {
+    font-size: 1.1em;
+    letter-spacing: 3px;
+    background: linear-gradient(rgba(0, 192, 253, 1), rgba(231, 15, 170, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: #A7A7A7;
+    padding: 1em;
+    position: relative;
+    padding: 0 10px;
+}
+
+.navbar-links li a::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(231, 15, 170, 1);
+    height: 3px;
+    width: 0 ;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar-links li a:hover::after {
+    width: 100%;
+}
+
+.navbar-links li a:hover {
+    color: rgba(0, 192, 253, 1);
+}
+
+.icons {
+    display: flex;
+    margin-top: -5px;
+}
+
+.introduction-section {
+    display: flex;
+    margin: 150px;
+    justify-content: space-between;
+}
