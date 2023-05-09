@@ -1,0 +1,67 @@
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    grid-template-rows: repeat(2, 600px);
+    justify-content: center;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    margin-top: 150px;
+}
+
+.project-cards div {
+    background: rgba(54, 54, 54, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.card-img {
+    width: 320px;
+    height: 600px;
+}
+
+.project-cards h2 {
+    color: white;
+}
+
+.project-cards p {
+    color: white;
+}
+
+.project-cards div .github-address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    align-self: stretch;
+}
+
+.project-cards div .github-address .live {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.project-cards div .github-address .live a {
+    margin-left: 5px;
+    color: white;
+}
+
+.project-cards div .github-address .github-code {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.project-cards div .github-address .github-code img {
+    margin-right: 5px;
+}
+
+.project-cards div .github-address .github-code a {
+    color: white;
+}
